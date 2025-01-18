@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "historia-jenerico"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "historia-jenerico-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
